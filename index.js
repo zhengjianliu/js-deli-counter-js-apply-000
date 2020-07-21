@@ -15,7 +15,7 @@ function currentLine(katzDeliLine){
   var output = []
   if (katzDeliLine.length > 0){
     for (var i = 0; i < katzDeliLine.length; i++){
-      output += ` ${i+1}. ${katzDeliLine[i]},` 
+      output += ` ${i+1}. ${katzDeliLine[i]},`  // add index number to each name
     }
     return 'The line is currently:' + output.slice(0,output.length-1) //remove the comma `,` in the end.
   }else{
